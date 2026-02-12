@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e2167, rgb(161, 79, 237));
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    form {
+      background: white;
+      width: 80%;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    fieldset {
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+      width: auto;
+    }
+
+    input[type="submit"] {
+      background-color: #1e2167;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgb(161, 79, 237);
+    }
+  </style>
+</head>
+
+<body>
+
+<form>
+  <h1>Student Registration Form</h1>
+
+  <fieldset>
+    <legend>Personal Details</legend>
+
+    <label>First Name:</label>
+    <input type="text" name="firstname" required>
+
+    <label>Last Name:</label>
+    <input type="text" name="lastname" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone:</label>
+    <input type="tel" name="phoneno" required>
+
+    <label>Address:</label>
+    <textarea rows="4" required></textarea>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Others"> Others
+
+    <br><br>
+
+    <label>DOB:</label>
+    <input type="date" name="dob" required>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Educational Details</legend>
+
+    <label>Degree:</label>
+    <input type="text" name="degree">
+
+    <label>Engineering Branch:</label>
+    <input type="text" name="branch">
+
+    <label>Signature:</label>
+    <input type="file" accept=".jpg,.png">
+
+    <label>Photo:</label>
+    <input type="file" accept=".jpg,.png">
+
+    <label>Resume Upload:</label>
+    <input type="file" accept=".pdf">
+
+  </fieldset>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

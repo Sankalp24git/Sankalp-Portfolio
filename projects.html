@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Your Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1e2167, rgb(161, 79, 237));
+        }
+
+        .projects-section {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1e2167;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1e2167;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #1e2167;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background-color: rgb(161, 79, 237);
+        }
+
+        @media (max-width: 768px) {
+            .projects-section {
+                margin: 30px 20px;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="projects-section">
+        <h1>My Projects</h1>
+        <div class="subtitle">Some of My Recent Work</div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-content">
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-description">
+                        A modern and responsive personal portfolio website built using HTML and CSS.
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="project-content">
+                    <div class="project-title">Business Landing Page</div>
+                    <div class="project-description">
+                        A clean and professional landing page designed for a small business.
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="project-content">
+                    <div class="project-title">E-Commerce Layout</div>
+                    <div class="project-description">
+                        A responsive e-commerce website layout with product sections and navigation.
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

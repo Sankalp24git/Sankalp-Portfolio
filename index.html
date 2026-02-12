@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sankalp - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 105);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(27 27 86);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(113, 113, 228);
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0px;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0px;
+      }
+
+      .leftSection .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .leftSection .btn:hover {
+        background-color: rgb(161, 79, 237);
+        border-color: rgb(161, 79, 237);
+      }
+
+      .rightSection {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(161, 79, 237);
+      }
+      #element {
+        color: rgb(161, 79, 237);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        /* height: 80vh; */
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(161, 79, 237);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondSection {
+        max-width: 90vw;
+        margin: auto;
+        padding: 60px 0;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+      }
+
+      .secondSection .box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        padding-top: 40px;
+      }
+
+      /* Horizontal Line */
+      .secondSection .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: 2px;
+        background-color: white;
+      }
+
+      /* Vertical Line */
+      .secondSection .vertical {
+        position: relative;
+        width: 220px;
+        padding-top: 40px;
+      }
+
+      /* Vertical small line */
+      .secondSection .vertical::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 40px;
+        background-color: white;
+      }
+
+      .image-top {
+        width: 30px;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+
+      .vertical-title {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .vertical-desc {
+        font-size: 13px;
+        color: #cfcfcf;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      .footer ul li {
+        margin: 8px 0;
+      }
+
+      .footer i {
+        margin-right: 8px;
+        color: rgb(161, 79, 237);
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        color: rgb(161, 79, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sankalp's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="ContactUs.html" target="_blank">Contact</a></li>
+            <li><a href="services.html" target="_blank">Services</a></li>
+            <li><a href="projects.html" target="_blank">Projects</a></li>
+            <li>
+              <a href="Registrationform.html" target="_blank">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is<span class="purple"> Sankalp Gahlot</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="res.pdf" target="_blank" class="btn">View Resume</a>
+
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              class="btn"
+            >
+              Visit GitHub
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="ProgrammerPNG.png" alt="Developer Icon" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I Have Done So Far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Software Developer Trainee (Dec 2023 – June 2024)
+            </div>
+            <div class="vertical-desc">
+              Worked as a Software Developer Trainee at GFN Dselva Infotech Pvt.
+              Ltd., Agra. Contributed to the development of large-scale ERP
+              software and provided technical support to the development team.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              B.Tech (Computer Science Engineering) (2019 – 2023)
+            </div>
+            <div class="vertical-desc">
+              Completed Bachelor of Technology in Computer Science Engineering
+              with First Division from Faculty of Engineering, Agra College,
+              Agra.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Web Developer Intern (Dec 2022 – Jan 2023)
+            </div>
+            <div class="vertical-desc">
+              Worked as a Web Developer Intern at LetsGrowMore. Gained hands-on
+              experience in HTML, CSS, JavaScript, Bootstrap, and React.js.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Java Developer Intern (Oct 2022 – Nov 2022)
+            </div>
+            <div class="vertical-desc">
+              Worked as a Java Developer Intern at Oasis Infobyte. Improved
+              practical knowledge of Java by completing assigned development
+              tasks.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Marketing Intern (Feb 2022 – Mar 2022)
+            </div>
+            <div class="vertical-desc">
+              Worked with Tare Zameen Foundation on marketing initiatives.
+              Learned digital marketing and SEO strategies.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Social Entrepreneur Intern (Jan 2022 – Mar 2022)
+            </div>
+            <div class="vertical-desc">
+              Worked with Humari Pehchan NGO on marketing campaigns. Learned
+              digital marketing and SEO while supporting social welfare
+              initiatives.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Developer Icon" />
+            <div class="vertical-title">
+              Campus Ambassador Intern (Dec 2021 – Jan 2022)
+            </div>
+            <div class="vertical-desc">
+              Worked as a Campus Ambassador at Internshala. Promoted training
+              programs and gained exposure to digital marketing and branding.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Sankalp Gahlot Portfolio</h3>
+        </div>
+
+        <div class="footer-second">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Registrationform.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-fourth">
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:sankalpgahlot012@gmail.com">
+                sankalpgahlot012@gmail.com
+              </a>
+            </li>
+
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/er-sankalp-gahlot-10b9531b2"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+
+            <li>
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/Sankalp24git" target="_blank">
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+916397203882"> +91 6397203887 </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        &copy; 2026 Sankalp Gahlot | All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Software Developer",
+          "Video Editor",
+          "Graphic Designer",
+          "Dot net Developer",
+          "MERN",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
