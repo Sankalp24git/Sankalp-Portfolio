@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login</title>
+
+    <!-- Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="darkmode.js"></script>
+
+    <style></style>
+  </head>
+
+  <body class="login">
+    <header>
+      <nav>
+        <div class="left">Sankalp Gahlot Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Registrationform.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <button onclick="toggleMode()" id="modeBtn" class="dark-mode-btn">
+                ☀️Light Mode
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="box">
+      <h2>Login</h2>
+
+      <input type="text" id="loginEmail" placeholder="Enter Email" /><br />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Enter Password"
+      /><br />
+
+      <button onclick="login()">Login</button><br /><br />
+
+      <a href="Registrationform.html">Sign In / Sign Up</a>
+    </div>
+
+    <script>
+      function login() {
+        var email = document.getElementById("loginEmail").value;
+        var password = document.getElementById("loginPassword").value;
+
+        var storedEmail = localStorage.getItem("userEmail");
+        var storedPassword = localStorage.getItem("userPassword");
+
+        if (email === storedEmail && password === storedPassword) {
+          alert("Login Successful");
+          window.location.href = "Welcome.html";
+        } else {
+          alert("Invalid Credentials");
+        }
+      }
+    </script>
+  </body>
+</html>

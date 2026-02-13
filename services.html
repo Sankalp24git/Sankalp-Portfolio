@@ -1,130 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Services | Your Name</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html>
+  <head>
+    <title>Services | Sankalp Gahlot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="darkmode.js"></script>
+  </head>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #1e2167, rgb(161, 79, 237));
-        }
-
-        .services-section {
-            max-width: 1100px;
-            margin: 80px auto;
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #1e2167;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            color: #666;
-            margin-bottom: 50px;
-        }
-
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: #f9f9f9;
-            padding: 30px 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-
-        .service-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .service-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #1e2167;
-        }
-
-        .service-description {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 768px) {
-            .services-section {
-                margin: 30px 20px;
-                padding: 25px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <section class="services-section">
-        <h1>My Services</h1>
-        <div class="subtitle">What I Can Do For You</div>
-
-        <div class="services-container">
-
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <div class="service-title">Web Development</div>
-                <div class="service-description">
-                    I build responsive, fast, and modern websites using clean and efficient code.
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🎨</div>
-                <div class="service-title">UI/UX Design</div>
-                <div class="service-description">
-                    Designing intuitive and visually appealing interfaces focused on user experience.
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <div class="service-title">Website Optimization</div>
-                <div class="service-description">
-                    Improving website speed, performance, and responsiveness for better results.
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <div class="service-title">Maintenance & Support</div>
-                <div class="service-description">
-                    Providing ongoing support, updates, and improvements to keep your site running smoothly.
-                </div>
-            </div>
-
+  <body class="services">
+    <header>
+      <nav>
+        <div class="left">Sankalp Gahlot Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Registrationform.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <button onclick="toggleMode()" id="modeBtn" class="dark-mode-btn">
+                ☀️Light Mode
+              </button>
+            </li>
+          </ul>
         </div>
-    </section>
+      </nav>
+    </header>
+    <section class="services">
+      <h1>My Services</h1>
+      <div class="subtitle">What I Can Do For You</div>
 
-</body>
+      <div class="cards">
+        <div class="card">
+          <div>💻</div>
+          <h3>Web Development</h3>
+          <p>
+            Responsive, fast and modern websites built using clean and efficient
+            code tailored to your business needs.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>⚡</div>
+          <h3>Web Application Development</h3>
+          <p>
+            Custom web-based applications with secure login systems, dashboards
+            and dynamic functionality.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🏢</div>
+          <h3>ERP Solution</h3>
+          <p>
+            Complete ERP systems to manage accounts, inventory, HR and
+            operations efficiently.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>☁️</div>
+          <h3>Cloud Computing</h3>
+          <p>
+            Cloud setup, migration and management services to ensure scalability
+            and data security.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🎨</div>
+          <h3>Video & Graphic Designing</h3>
+          <p>
+            Creative branding, promotional videos and professional graphic
+            design solutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🔧</div>
+          <h3>Maintenance & Support</h3>
+          <p>
+            Ongoing website maintenance, updates, bug fixes and technical
+            assistance.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🌐</div>
+          <h3>Web Hosting</h3>
+          <p>
+            Domain registration, hosting setup and reliable server management
+            services.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🛠️</div>
+          <h3>Software & Hardware Support</h3>
+          <p>
+            Technical troubleshooting, installation support and system
+            optimization services.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>📢</div>
+          <h3>Digital Marketing</h3>
+          <p>
+            SEO optimization, social media marketing and complete online brand
+            growth strategies.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>🎓</div>
+          <h3>Software & Hardware Coaching</h3>
+          <p>
+            Professional practical training programs for students and working
+            professionals.
+          </p>
+        </div>
+
+        <div class="card">
+          <div>📚</div>
+          <h3>Online Coaching with Certification</h3>
+          <p>
+            Interactive online classes with structured curriculum and
+            certification upon completion.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

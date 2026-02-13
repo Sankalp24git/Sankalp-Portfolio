@@ -1,108 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contact Us | Your Name</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="darkmode.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #1e2167;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .contact-container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #1e2167;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-
-        textarea {
-            resize: none;
-            height: 100px;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #1e2167;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: rgb(161, 79, 237);
-        }
-
-        @media (max-width: 600px) {
-            .contact-container {
-                margin: 20px;
-                padding: 25px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
+  <body class="contact">
+    <header>
+      <nav>
+        <div class="left">Sankalp Gahlot Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Registrationform.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <button onclick="toggleMode()" id="modeBtn" class="dark-mode-btn">
+                ☀️Light Mode
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="contact-container">
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
+      <div class="info">
+        Monday to Saturday 10:00 AM to 7:00 PM IST Contact us and discuss your
+        business objectives about IT related services. We are HAPPY TO HELP you
+        to meet with your objectives or Concern. Request FREE Advise by filing
+        up the form. We will get back to you within 24 hrs....
+      </div>
 
-        <form>
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-            </div>
+      <form onsubmit="showMessage(event)">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Write your message..." required></textarea>
-            </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+        </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
 
-</body>
+    <script>
+      function showMessage(event) {
+        event.preventDefault();
+        alert("Thank you for your message we will contact you soon.");
+        event.target.reset();
+      }
+    </script>
+  </body>
 </html>

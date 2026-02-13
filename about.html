@@ -1,116 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <title>About Me | Sankalp Gahlot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="darkmode.js"></script>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg, #1e2167, rgb(161, 79, 237));
-        color: #333;
-      }
-
-      .about-section {
-        max-width: 900px;
-        margin: 80px auto;
-        padding: 40px;
-        background: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        color: #1e2167;
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        color: #666;
-        margin-bottom: 30px;
-      }
-
-      p {
-        line-height: 1.7;
-        margin-bottom: 20px;
-        text-align: left;
-      }
-
-      /* Profile Image */
-      .profile-img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid #1e2167;
-        margin-bottom: 30px;
-      }
-
-      /* Skills */
-      .skills {
-        margin-top: 30px;
-        text-align: center;
-      }
-
-      .skills span {
-        display: inline-block;
-        background: #1e2167;
-        color: white;
-        padding: 8px 15px;
-        border-radius: 20px;
-        margin: 5px;
-        font-size: 14px;
-      }
-
-      @media (max-width: 768px) {
-        .about-section {
-          margin: 30px 20px;
-          padding: 25px;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-      }
-    </style>
+    <!-- Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <section class="about-section">
+  <body class="about">
+    <header>
+      <nav>
+        <div class="left">Sankalp Gahlot Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Registrationform.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+           <li>
+              <button onclick="toggleMode()" id="modeBtn" class="dark-mode-btn">
+                ☀️Light Mode
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="box">
       <h1>About Me</h1>
+
       <div class="subtitle">
         Creative Developer | Problem Solver | Lifelong Learner
       </div>
 
-      <!-- Profile Image -->
-      <img src="MyImg.png" alt="Sankalp Gahlot Image" class="profile-img" />
+      <img src="MyImg.png" alt="Sankalp Gahlot Image" />
 
       <p>
-        Hello! I'm <strong>Sankalp Gahlot</strong> lives in agra, uttar
-        pradesh,India, I have a done a B.Tech in Computer Science from FET Agra
-        College Agra with First Division also im a passionate developer who
-        enjoys building modern, responsive, and user-friendly websites and web
-        application. I love transforming ideas into functional digital
-        experiences.
+        Hello! I'm <strong>Sankalp Gahlot</strong> lives in Agra, Uttar Pradesh,
+        India. I have done B.Tech in Computer Science from FET Agra College Agra
+        with First Division. I am a passionate developer who enjoys building
+        modern, responsive, and user-friendly websites and web applications. I
+        love transforming ideas into functional digital experiences.
       </p>
 
       <p>
         I focus on writing clean, efficient code and designing interfaces that
-        are simple, elegant, and intuitive. I’m constantly learning and
-        improving to stay current with modern web technologies.
+        are simple and intuitive. I’m constantly learning and improving to stay
+        updated with modern web technologies.
       </p>
 
       <div class="subtitle">
-        I have a practical experiences in the below skill.
+        I have practical experience in the below skills:
       </div>
 
       <div class="skills">
-        <!-- Frontend -->
         <span>HTML5</span>
         <span>CSS3</span>
         <span>JavaScript</span>
@@ -119,8 +72,6 @@
         <span>Bootstrap</span>
         <span>jQuery</span>
         <span>AJAX</span>
-
-        <!-- Backend -->
         <span>Node.js</span>
         <span>Express.js</span>
         <span>PHP</span>
@@ -131,27 +82,19 @@
         <span>ADO.NET</span>
         <span>Web API</span>
         <span>Web Services</span>
-
-        <!-- Programming Languages -->
         <span>JavaScript</span>
         <span>Python</span>
         <span>Java</span>
         <span>C#</span>
-
-        <!-- Database -->
         <span>SQL</span>
         <span>Microsoft SQL Server</span>
         <span>PostgreSQL</span>
         <span>Oracle</span>
         <span>DBMS</span>
-
-        <!-- Concepts -->
         <span>OOPS</span>
         <span>Data Structures & Algorithms</span>
         <span>CI/CD Pipeline</span>
         <span>Scrum</span>
-
-        <!-- Other Skills -->
         <span>Git</span>
         <span>IIS Server</span>
         <span>WordPress</span>
@@ -161,6 +104,56 @@
         <span>Web Development</span>
         <span>Typing (Hindi & English)</span>
       </div>
-    </section>
+    </div>
+
+    <div class="subtitle" style="margin-top: 30px">Connect With Me</div>
+
+    <div style="text-align: center; margin-top: 10px">
+      <a
+        href="https://www.linkedin.com/in/er-sankalp-gahlot-10b9531b2"
+        target="_blank"
+        style="
+          color: rgb(161, 79, 237);
+          text-decoration: none;
+          font-weight: 500;
+          margin: 0 10px;
+        "
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/Sankalp24git"
+        target="_blank"
+        style="
+          color: rgb(161, 79, 237);
+          text-decoration: none;
+          font-weight: 500;
+          margin: 0 10px;
+        "
+      >
+        GitHub
+      </a>
+    </div>
+    <div style="margin-top: 20px; display: flex; justify-content: center">
+      <div
+        style="
+          width: 300px;
+          height: 200px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <iframe
+          src="https://www.google.com/maps?q=Agra,Uttar Pradesh&output=embed"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
   </body>
 </html>
